@@ -1,0 +1,323 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:cnc-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 571B3FDD
+P 1600 3450
+F 0 "#PWR01" H 1600 3200 50  0001 C CNN
+F 1 "GND" H 1600 3300 50  0000 C CNN
+F 2 "" H 1600 3450 50  0000 C CNN
+F 3 "" H 1600 3450 50  0000 C CNN
+	1    1600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR02
+U 1 1 571B400B
+P 1950 3600
+F 0 "#PWR02" H 1950 3350 50  0001 C CNN
+F 1 "GNDA" H 1950 3450 50  0000 C CNN
+F 2 "" H 1950 3600 50  0000 C CNN
+F 3 "" H 1950 3600 50  0000 C CNN
+	1    1950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 571B4082
+P 1800 1650
+F 0 "R1" V 1880 1650 50  0000 C CNN
+F 1 "10k" V 1800 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1730 1650 50  0001 C CNN
+F 3 "" H 1800 1650 50  0000 C CNN
+	1    1800 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L +3V3 #PWR03
+U 1 1 571B414A
+P 1500 1500
+F 0 "#PWR03" H 1500 1350 50  0001 C CNN
+F 1 "+3V3" H 1500 1640 50  0000 C CNN
+F 2 "" H 1500 1500 50  0000 C CNN
+F 3 "" H 1500 1500 50  0000 C CNN
+	1    1500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3A #PWR04
+U 1 1 571B4447
+P 1750 2200
+F 0 "#PWR04" H 1750 2050 50  0001 C CNN
+F 1 "+3V3A" H 1750 2340 50  0000 C CNN
+F 2 "" H 1750 2200 50  0000 C CNN
+F 3 "" H 1750 2200 50  0000 C CNN
+	1    1750 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SD_Card CON1
+U 1 1 571B46FE
+P 10000 1700
+F 0 "CON1" H 9350 2250 50  0000 C CNN
+F 1 "SD_Card" H 10600 1150 50  0000 C CNN
+F 2 "Connect:SD_Card_Receptacle" H 10200 2050 50  0000 C CNN
+F 3 "" H 10000 1700 50  0000 C CNN
+	1    10000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR05
+U 1 1 571B4D59
+P 8050 750
+F 0 "#PWR05" H 8050 600 50  0001 C CNN
+F 1 "+3V3" H 8050 890 50  0000 C CNN
+F 2 "" H 8050 750 50  0000 C CNN
+F 3 "" H 8050 750 50  0000 C CNN
+	1    8050 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 571B4E43
+P 8950 1050
+F 0 "R6" V 9030 1050 50  0000 C CNN
+F 1 "50k" V 8950 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8880 1050 50  0001 C CNN
+F 3 "" H 8950 1050 50  0000 C CNN
+	1    8950 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 571B4EC8
+P 8750 1050
+F 0 "R5" V 8830 1050 50  0000 C CNN
+F 1 "50k" V 8750 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8680 1050 50  0001 C CNN
+F 3 "" H 8750 1050 50  0000 C CNN
+	1    8750 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 571B4F11
+P 8550 1050
+F 0 "R4" V 8630 1050 50  0000 C CNN
+F 1 "50k" V 8550 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8480 1050 50  0001 C CNN
+F 3 "" H 8550 1050 50  0000 C CNN
+	1    8550 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 571B514F
+P 8800 2200
+F 0 "#PWR06" H 8800 1950 50  0001 C CNN
+F 1 "GND" H 8800 2050 50  0000 C CNN
+F 2 "" H 8800 2200 50  0000 C CNN
+F 3 "" H 8800 2200 50  0000 C CNN
+	1    8800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 571B51B2
+P 8350 1050
+F 0 "R3" V 8430 1050 50  0000 C CNN
+F 1 "50k" V 8350 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8280 1050 50  0001 C CNN
+F 3 "" H 8350 1050 50  0000 C CNN
+	1    8350 1050
+	1    0    0    -1  
+$EndComp
+Text Label 7550 1500 0    60   ~ 0
+SD_Din
+Text Label 7550 2000 0    60   ~ 0
+SD_Dout
+Text Label 7550 1800 0    60   ~ 0
+SD_clk
+$Comp
+L GND #PWR07
+U 1 1 571B5510
+P 10900 2000
+F 0 "#PWR07" H 10900 1750 50  0001 C CNN
+F 1 "GND" H 10900 1850 50  0000 C CNN
+F 2 "" H 10900 2000 50  0000 C CNN
+F 3 "" H 10900 2000 50  0000 C CNN
+	1    10900 2000
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 6050 3800 750  1050
+U 57222A09
+F0 "uart" 60
+F1 "uart.sch" 60
+F2 "TX" O L 6050 4400 60 
+F3 "CTS" I L 6050 4550 60 
+F4 "RX" I L 6050 4300 60 
+F5 "RTS" O L 6050 4150 60 
+$EndSheet
+$Comp
+L pic32 U1
+U 1 1 575F2367
+P 3150 3050
+F 0 "U1" H 3600 4650 60  0000 C CNN
+F 1 "pic32" H 2450 4600 60  0000 C CNN
+F 2 "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm" H 3600 4650 60  0001 C CNN
+F 3 "" H 3600 4650 60  0000 C CNN
+	1    3150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 575F243C
+P 1950 4000
+F 0 "C2" H 1975 4100 50  0000 L CNN
+F 1 "1uF" H 1975 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1988 3850 50  0001 C CNN
+F 3 "" H 1950 4000 50  0000 C CNN
+	1    1950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 575F2544
+P 1950 4150
+F 0 "#PWR08" H 1950 3900 50  0001 C CNN
+F 1 "GND" H 1950 4000 50  0000 C CNN
+F 2 "" H 1950 4150 50  0000 C CNN
+F 3 "" H 1950 4150 50  0000 C CNN
+	1    1950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3450 1600 3450
+Wire Wire Line
+	1950 3200 1950 3450
+Connection ~ 1950 3400
+Connection ~ 1950 3300
+Wire Wire Line
+	1500 1500 1500 1900
+Wire Wire Line
+	1500 1650 1650 1650
+Wire Wire Line
+	1500 1900 1950 1900
+Connection ~ 1500 1650
+Wire Wire Line
+	1750 2200 1950 2200
+Wire Wire Line
+	1950 1900 1950 2000
+Wire Wire Line
+	9100 1300 8950 1300
+Wire Wire Line
+	8950 1300 8950 1200
+Wire Wire Line
+	9100 1400 8750 1400
+Wire Wire Line
+	8750 1400 8750 1200
+Wire Wire Line
+	8550 2000 8550 1200
+Wire Wire Line
+	7550 2000 9100 2000
+Wire Wire Line
+	8050 900  8950 900 
+Wire Wire Line
+	8050 750  8050 1700
+Connection ~ 8550 900 
+Connection ~ 8750 900 
+Wire Wire Line
+	8050 1700 9100 1700
+Connection ~ 8050 900 
+Wire Wire Line
+	9100 1900 8800 1900
+Wire Wire Line
+	8800 1600 8800 2200
+Wire Wire Line
+	9100 1600 8800 1600
+Connection ~ 8800 1900
+Connection ~ 8350 900 
+Wire Wire Line
+	8350 1200 8350 2100
+Wire Wire Line
+	8350 2100 9100 2100
+Wire Wire Line
+	7550 1500 9100 1500
+Connection ~ 8550 2000
+Wire Wire Line
+	9100 1800 7550 1800
+Connection ~ 8950 900 
+Wire Wire Line
+	10900 1800 10900 2000
+Connection ~ 10900 1900
+Wire Notes Line
+	11050 2700 7000 2700
+Wire Notes Line
+	7000 2700 7000 700 
+Wire Wire Line
+	4400 4400 6050 4400
+Wire Wire Line
+	4400 4500 4900 4500
+Wire Wire Line
+	4400 4300 6050 4300
+Wire Wire Line
+	6050 4550 4900 4550
+Wire Wire Line
+	4900 4550 4900 4500
+Wire Wire Line
+	4400 3150 5250 3150
+Wire Wire Line
+	5250 3150 5250 4150
+Wire Wire Line
+	5250 4150 6050 4150
+$Sheet
+S 8550 3700 1100 1100
+U 575F3DF9
+F0 "hbridges" 60
+F1 "hbridges.sch" 60
+$EndSheet
+$EndSCHEMATC
