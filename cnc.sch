@@ -33,7 +33,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -68,12 +68,12 @@ $EndComp
 $Comp
 L R R101
 U 1 1 571B4082
-P 1400 2675
-F 0 "R101" V 1480 2675 50  0000 C CNN
-F 1 "10k" V 1400 2675 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 1330 2675 50  0001 C CNN
-F 3 "" H 1400 2675 50  0000 C CNN
-	1    1400 2675
+P 1325 2675
+F 0 "R101" V 1405 2675 50  0000 C CNN
+F 1 "10k" V 1325 2675 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1255 2675 50  0001 C CNN
+F 3 "" H 1325 2675 50  0000 C CNN
+	1    1325 2675
 	0    1    1    0   
 $EndComp
 $Comp
@@ -276,8 +276,6 @@ Connection ~ 1550 4325
 Wire Wire Line
 	1100 2525 1100 2925
 Wire Wire Line
-	1100 2675 1250 2675
-Wire Wire Line
 	1100 2925 1550 2925
 Connection ~ 1100 2675
 Wire Wire Line
@@ -394,22 +392,87 @@ Wire Wire Line
 	4725 3850 4725 3975
 Wire Wire Line
 	4725 3975 4000 3975
-Text Label 4000 4475 0    60   ~ 0
+Text Label 4375 4475 2    60   ~ 0
 SD_Dout
-Text Label 4000 5075 0    60   ~ 0
+Text Label 4325 5075 2    60   ~ 0
 SD_clk
-Text Label 4000 4975 0    60   ~ 0
+Text Label 4325 4975 2    60   ~ 0
 SD_Din
 Wire Wire Line
 	4000 4975 4325 4975
 Wire Wire Line
-	4325 4975 4325 4950
-Wire Wire Line
 	4000 5075 4325 5075
 Wire Wire Line
-	4325 5075 4325 5050
-Wire Wire Line
 	4000 4475 4375 4475
+$Sheet
+S 1350 975  1100 400 
+U 57BD82CE
+F0 "power" 60
+F1 "power.sch" 60
+$EndSheet
+$Comp
+L CONN_01X05 P?
+U 1 1 57BDB89F
+P 2100 1950
+F 0 "P?" H 2100 2250 50  0000 C CNN
+F 1 "icsp" V 2200 1950 50  0000 C CNN
+F 2 "" H 2100 1950 50  0000 C CNN
+F 3 "" H 2100 1950 50  0000 C CNN
+	1    2100 1950
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	4375 4475 4375 4450
+	1550 2675 1550 1575
+Wire Wire Line
+	1550 1575 2300 1575
+Wire Wire Line
+	2300 1575 2300 1750
+$Comp
+L +3V3 #PWR?
+U 1 1 57BDBEA3
+P 2575 1725
+F 0 "#PWR?" H 2575 1575 50  0001 C CNN
+F 1 "+3V3" H 2575 1865 50  0000 C CNN
+F 2 "" H 2575 1725 50  0000 C CNN
+F 3 "" H 2575 1725 50  0000 C CNN
+	1    2575 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1850 2575 1850
+Wire Wire Line
+	2575 1850 2575 1725
+Wire Wire Line
+	1100 2675 1175 2675
+Wire Wire Line
+	1550 2675 1475 2675
+Connection ~ 1550 2675
+Connection ~ 1550 2925
+$Comp
+L GND #PWR?
+U 1 1 57BDC589
+P 2750 1975
+F 0 "#PWR?" H 2750 1725 50  0001 C CNN
+F 1 "GND" H 2750 1825 50  0000 C CNN
+F 2 "" H 2750 1975 50  0000 C CNN
+F 3 "" H 2750 1975 50  0000 C CNN
+	1    2750 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1950 2750 1950
+Wire Wire Line
+	2750 1950 2750 1975
+Text Label 2300 2050 0    60   ~ 0
+pged
+Text Label 2300 2150 0    60   ~ 0
+pgec
+Text Label 4275 4675 2    60   ~ 0
+pged
+Text Label 4275 4775 2    60   ~ 0
+pgec
+Wire Wire Line
+	4000 4675 4275 4675
+Wire Wire Line
+	4000 4775 4275 4775
 $EndSCHEMATC

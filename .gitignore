@@ -3,3 +3,5 @@
 *.kicad_pcb-bak
 *.net
 *.dcm
+#kicad temp stuff
+_*
