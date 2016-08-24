@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FQP85N06
+D Transistor N-MOSFET (general)
+K nmos n-mos n-mosfet transistor
+$ENDCMP
+#
+$CMP IRF4905PbF
+D Transistor P-MOSFET (general)
+K pmos p-mos p-mosfet transistor
+$ENDCMP
+#
+$CMP NTJD5121N
+D 20V Vds, 300mA Id, 1Ohm Rds, Dual N-Channel MOSFET, SC-88
+K Dual N-Channel MOSFET Logic Level
+F http://www.farnell.com/datasheets/1708304.pdf
+$ENDCMP
+#
+$CMP PWR_GND
+D Power ground
+$ENDCMP
+#
+#End Doc Library
